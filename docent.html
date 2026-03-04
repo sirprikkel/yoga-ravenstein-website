@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docent Anja de Been — Yoga Ravenstein</title>
+    <meta name="description" content="Yogadocent Anja de Been geeft sinds 1999 les in Ravenstein. Opgeleid aan Samsara in Bilthoven, internationaal erkende opleiding.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#8B5CF6', 'primary-light': '#C4B5FD', cta: '#10B981', 'cta-hover': '#059669', cream: '#FAF5FF', 'text-dark': '#4C1D95' }, fontFamily: { serif: ['Lora','serif'], sans: ['Raleway','sans-serif'] }, borderRadius: { 'organic': '24px' } } } }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-sub { background: linear-gradient(135deg, rgba(139,92,246,0.8) 0%, rgba(16,185,129,0.6) 100%); }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) { .fade-in { opacity: 1; transform: none; transition: none; } }
+    </style>
+    <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="7305601f-9671-4933-a010-a1f4ef98b611"></script>
+</head>
+<body class="font-sans text-gray-800 bg-cream">
+
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="font-serif text-xl font-bold text-primary cursor-pointer">Yoga Ravenstein</a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Home</a>
+                    <a href="yogales.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Yogales</a>
+                    <a href="hatha-yoga.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Hatha Yoga</a>
+                    <a href="mindfulness.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Mindfulness</a>
+                    <a href="docent.html" class="text-primary font-medium cursor-pointer">Docent</a>
+                    <a href="kosten.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Kosten</a>
+                    <a href="links-en-tips.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Links & Tips</a>
+                    <a href="contact.html" class="bg-cta hover:bg-cta-hover text-white px-5 py-2 rounded-full transition-colors duration-200 cursor-pointer font-medium">Contact</a>
+                </div>
+                <button id="menu-btn" class="md:hidden min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer" aria-label="Menu">
+                    <svg class="w-6 h-6 text-text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block py-2 text-text-dark cursor-pointer">Home</a>
+                <a href="yogales.html" class="block py-2 text-text-dark cursor-pointer">Yogales</a>
+                <a href="hatha-yoga.html" class="block py-2 text-text-dark cursor-pointer">Hatha Yoga</a>
+                <a href="mindfulness.html" class="block py-2 text-text-dark cursor-pointer">Mindfulness</a>
+                <a href="docent.html" class="block py-2 text-primary font-medium cursor-pointer">Docent</a>
+                <a href="kosten.html" class="block py-2 text-text-dark cursor-pointer">Kosten</a>
+                <a href="links-en-tips.html" class="block py-2 text-text-dark cursor-pointer">Links & Tips</a>
+                <a href="contact.html" class="block bg-cta text-white text-center px-5 py-3 rounded-full cursor-pointer font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-16">
+        <div class="relative h-64 md:h-80">
+            <img src="images/anja-docent.jpg" alt="Yogadocent Anja de Been" class="w-full h-full object-cover">
+            <div class="hero-sub absolute inset-0"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="font-serif text-4xl md:text-5xl font-bold text-white text-center">Docent</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                <div class="lg:col-span-1 fade-in">
+                    <img src="images/anja-docent.jpg" alt="Anja de Been" class="rounded-organic w-full shadow-lg" loading="lazy">
+                    <div class="mt-6 bg-white rounded-organic p-5 shadow-sm">
+                        <h3 class="font-serif font-semibold text-text-dark mb-3">Anja de Been</h3>
+                        <ul class="space-y-2 text-gray-600 text-sm">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Gediplomeerd yogadocent (2000)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Opleiding Samsara, Bilthoven
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Lesgeven sinds 1999
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Mindfulness training
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Ayurvedisch massagetherapeut
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 fade-in">
+                    <h2 class="font-serif text-2xl md:text-3xl font-bold text-text-dark mb-6">Anja de Been</h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">Mijn naam is Anja de Been. Jarenlang ben ik werkzaam geweest in de zorg. Als hobby ging ik me steeds meer met groot enthousiasme bezighouden met kunst, hetgeen op enig moment resulteerde in een opleiding aan de toenmalige kunstacademie in Arnhem. Ik volgde daar de richting ongebonden kunsten en hield me het liefst bezig met allerlei druktechnieken.</p>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">In diezelfde tijd, in 1985, begon ik met het volgen van yogalessen. Aanleiding hiertoe waren lichamelijke klachten.</p>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">Na van diverse docenten les gehad te hebben, raakte ik enthousiast voor de opleiding tot yogadocent. Ik heb gekozen voor Samsara in Bilthoven, de docentenopleiding die opgericht is door Rita Beintema en nu al vele jaren geleid wordt door Daniëlle Bersma. Dit is een gedegen vierjarige en internationaal erkende opleiding, die ik in 2000 heb afgerond.</p>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">Deze opleiding sprak mij aan omdat ze gebaseerd is op een stroming die niet uitgaat van presteren en bereiken (advaita vedanta ofwel nondualisme). De manier van lesgeven is gefundeerd en nuchter. Het uitgangspunt is dat je o.k. bent zoals je bent en dat je je vanuit dat uitgangspunt op alle vlakken ontwikkelt op een ontspannen manier. Als yogadocent heb ik een open en onderzoekende houding.</p>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">Sinds 1999 ben ik voornamelijk werkzaam als yogadocent in Ravenstein waar ik in 'de Valkenburcht' vanaf 1999 les geef.</p>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">Sinds het behalen van mijn diploma in 2000, heb ik me steeds verdiept. Ik heb vele bijscholingen gevolgd en dat doe ik nog steeds, onder andere op het gebied van yoga, kringspieren, adem, chi gong, chi nen chi gong en meditatie. Voorts heb ik een mindfulness training gevolgd en een opleiding afgerond tot ayurvedisch massagetherapeut. Ook alles wat met ontwikkeling, gezondheid en voeding te maken heeft, heeft mijn bijzondere interesse.</p>
+
+                    <p class="text-gray-600 leading-relaxed mb-4">Daarnaast speel ik met veel plezier tafeltennis bij tafeltennisvereniging Return in Oss. Daar geef ik ook les in het kader van Oldstars-tafeltennis. Voorts inspireren en enthousiasmeren natuur en kunst mij zeer.</p>
+
+                    <p class="text-gray-600 leading-relaxed">Lange tijd heb ik met veel plezier in Ravenstein gewoond. Sinds 2002 woon ik op een prachtige plek in Oss. Ik ben getrouwd en heb een fantastische volwassen zoon en schoondochter.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-br from-primary to-cta">
+        <div class="max-w-3xl mx-auto text-center px-4">
+            <h2 class="font-serif text-3xl font-bold text-white mb-4">Kennismaken met Anja?</h2>
+            <p class="text-white/90 mb-8">Kom langs voor een vrijblijvende proefles en maak kennis.</p>
+            <a href="contact.html" class="inline-block bg-white text-primary hover:bg-cream px-8 py-4 rounded-full text-lg font-semibold transition-colors duration-200 cursor-pointer shadow-lg">Neem contact op</a>
+        </div>
+    </section>
+
+    <footer class="bg-text-dark text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div><h3 class="font-serif text-xl font-bold mb-4">Yoga Ravenstein</h3><p class="text-white/70 leading-relaxed">Yogales met beide benen op de grond. Hatha yoga en mindfulness in Ravenstein.</p></div>
+                <div><h4 class="font-semibold mb-4">Pagina's</h4><ul class="space-y-2"><li><a href="yogales.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Yogales</a></li><li><a href="hatha-yoga.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Hatha Yoga</a></li><li><a href="mindfulness.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Mindfulness</a></li><li><a href="docent.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Docent</a></li><li><a href="kosten.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Kosten</a></li><li><a href="links-en-tips.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Links & Tips</a></li></ul></div>
+                <div><h4 class="font-semibold mb-4">Contact</h4><ul class="space-y-2 text-white/70"><li>Kasteelseplaats 4, Ravenstein</li><li><a href="tel:0412-631010" class="hover:text-white transition-colors duration-200 cursor-pointer">0412-631010</a></li><li><a href="tel:0649652945" class="hover:text-white transition-colors duration-200 cursor-pointer">06-49652945</a></li></ul></div>
+            </div>
+            <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/50 text-sm"><p>&copy; 2024 Yoga Ravenstein · Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-white transition-colors duration-200 cursor-pointer">Code Lieshout</a></p></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('hidden'); });
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

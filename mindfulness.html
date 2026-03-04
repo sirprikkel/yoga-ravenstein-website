@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness — Yoga Ravenstein</title>
+    <meta name="description" content="Mindfulness staat voor leven met volle aandacht in het hier en nu. Een onlosmakelijk onderdeel van yoga met bewezen positieve resultaten.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: { colors: { primary: '#8B5CF6', 'primary-light': '#C4B5FD', cta: '#10B981', 'cta-hover': '#059669', cream: '#FAF5FF', 'text-dark': '#4C1D95' }, fontFamily: { serif: ['Lora','serif'], sans: ['Raleway','sans-serif'] }, borderRadius: { 'organic': '24px' } } } }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-sub { background: linear-gradient(135deg, rgba(139,92,246,0.8) 0%, rgba(16,185,129,0.6) 100%); }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) { .fade-in { opacity: 1; transform: none; transition: none; } }
+    </style>
+    <script defer src="https://analytics.code-lieshout.nl/script.js" data-website-id="7305601f-9671-4933-a010-a1f4ef98b611"></script>
+</head>
+<body class="font-sans text-gray-800 bg-cream">
+
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="font-serif text-xl font-bold text-primary cursor-pointer">Yoga Ravenstein</a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Home</a>
+                    <a href="yogales.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Yogales</a>
+                    <a href="hatha-yoga.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Hatha Yoga</a>
+                    <a href="mindfulness.html" class="text-primary font-medium cursor-pointer">Mindfulness</a>
+                    <a href="docent.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Docent</a>
+                    <a href="kosten.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Kosten</a>
+                    <a href="links-en-tips.html" class="text-text-dark hover:text-primary transition-colors duration-200 cursor-pointer">Links & Tips</a>
+                    <a href="contact.html" class="bg-cta hover:bg-cta-hover text-white px-5 py-2 rounded-full transition-colors duration-200 cursor-pointer font-medium">Contact</a>
+                </div>
+                <button id="menu-btn" class="md:hidden min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer" aria-label="Menu">
+                    <svg class="w-6 h-6 text-text-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="index.html" class="block py-2 text-text-dark cursor-pointer">Home</a>
+                <a href="yogales.html" class="block py-2 text-text-dark cursor-pointer">Yogales</a>
+                <a href="hatha-yoga.html" class="block py-2 text-text-dark cursor-pointer">Hatha Yoga</a>
+                <a href="mindfulness.html" class="block py-2 text-primary font-medium cursor-pointer">Mindfulness</a>
+                <a href="docent.html" class="block py-2 text-text-dark cursor-pointer">Docent</a>
+                <a href="kosten.html" class="block py-2 text-text-dark cursor-pointer">Kosten</a>
+                <a href="links-en-tips.html" class="block py-2 text-text-dark cursor-pointer">Links & Tips</a>
+                <a href="contact.html" class="block bg-cta text-white text-center px-5 py-3 rounded-full cursor-pointer font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-16">
+        <div class="relative h-64 md:h-80">
+            <img src="images/mindfulness.jpg" alt="Mindfulness" class="w-full h-full object-cover">
+            <div class="hero-sub absolute inset-0"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <h1 class="font-serif text-4xl md:text-5xl font-bold text-white text-center">Mindfulness</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="fade-in mb-12">
+                <p class="text-gray-600 leading-relaxed text-lg mb-6">Mindfulness staat voor leven met volle aandacht in het hier en nu. Alles in het leven kun je op een 'mindfulle' manier doen. Je kunt bijvoorbeeld in volle aandacht eten. Met al je zintuigen. Het eten heel aandachtig en rustig zien, ruiken, voelen, proeven, kauwen, horen hoe het knispert, enzovoort. Dit alles héél bewust.</p>
+            </div>
+
+            <div class="fade-in mb-12">
+                <h2 class="font-serif text-2xl md:text-3xl font-bold text-text-dark mb-6">Aanwezig zijn in het hier en nu</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">Heel vaak willen we dat de dingen anders zijn dan ze zijn. We neigen ertegen te vechten en ervan weg te bewegen. We delen alles in in 'goed of fout', 'mooi of niet mooi'. We vellen oordelen. We leiden ons leven op basis van conditioneringen uit het verleden.</p>
+                <p class="text-gray-600 leading-relaxed mb-4">Vaak gaat het om negatieve boodschappen die als een computervirus in ons onderbewuste zijn geprent. Boodschappen die ons als klein kind hielpen onszelf te handhaven, maar die inmiddels contraproductief en vaak zelfs destructief zijn, maar die we toch niet gemakkelijk los kunnen laten.</p>
+                <p class="text-gray-600 leading-relaxed mb-4">We hebben ons dit patroon zodanig eigen gemaakt, dat we het op de automatische piloot nog steeds zo doen als vroeger. Naast het verleden, zijn we ook vaak bezig met de toekomst, met name met angst voor de toekomst. Maar wanneer zijn we helemaal aanwezig hier en nu? Als we dit leren, komt er meer rust en vertrouwen.</p>
+            </div>
+
+            <div class="fade-in mb-12">
+                <h2 class="font-serif text-2xl md:text-3xl font-bold text-text-dark mb-6">Wat is Mindfulness?</h2>
+                <p class="text-gray-600 leading-relaxed mb-4">Mindfulness is een methode die je helpt bewuster te worden van je drijfveren en ook meer in het hier en nu te zijn. Mindfulness is voor mij een onlosmakelijk onderdeel van yoga. Het is het in aandacht zijn, open en bewust in het leven staan en de dingen waarnemen zoals ze zijn, zonder ze goed of af te keuren.</p>
+                <p class="text-gray-600 leading-relaxed mb-4">Het is met mildheid jezelf en anderen schouwen, observeren, onderzoeken, zonder er een oordeel over te vellen. Dit maakt dat je leert anders om te gaan met de stress in je leven en minder verstrikt raakt in gedachten en gevoelens.</p>
+                <p class="text-gray-600 leading-relaxed mb-4">Je laat gedachten passeren zonder er aandacht aan te schenken of er op door te denken. Je observeert meer, je neemt bewuster waar wat er in het hier en nu is. Het leert je te relativeren: 'hoe belangrijk is deze negatieve gedachte of dit negatieve gevoel nog over een uur, een dag, een maand, een jaar?'</p>
+
+                <div class="bg-cta/10 rounded-organic p-6 md:p-8 mt-8">
+                    <p class="text-gray-700 leading-relaxed font-medium">Mindfulness wordt de laatste jaren steeds meer aanbevolen door de reguliere gezondheidszorg, vanwege de bewezen positieve resultaten.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-br from-primary to-cta">
+        <div class="max-w-3xl mx-auto text-center px-4">
+            <h2 class="font-serif text-3xl font-bold text-white mb-4">Mindfulness ervaren?</h2>
+            <p class="text-white/90 mb-8">Mindfulness is een vast onderdeel van elke yogales. Kom langs voor een vrijblijvende proefles.</p>
+            <a href="contact.html" class="inline-block bg-white text-primary hover:bg-cream px-8 py-4 rounded-full text-lg font-semibold transition-colors duration-200 cursor-pointer shadow-lg">Neem contact op</a>
+        </div>
+    </section>
+
+    <footer class="bg-text-dark text-white py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div><h3 class="font-serif text-xl font-bold mb-4">Yoga Ravenstein</h3><p class="text-white/70 leading-relaxed">Yogales met beide benen op de grond. Hatha yoga en mindfulness in Ravenstein.</p></div>
+                <div><h4 class="font-semibold mb-4">Pagina's</h4><ul class="space-y-2"><li><a href="yogales.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Yogales</a></li><li><a href="hatha-yoga.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Hatha Yoga</a></li><li><a href="mindfulness.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Mindfulness</a></li><li><a href="docent.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Docent</a></li><li><a href="kosten.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Kosten</a></li><li><a href="links-en-tips.html" class="text-white/70 hover:text-white transition-colors duration-200 cursor-pointer">Links & Tips</a></li></ul></div>
+                <div><h4 class="font-semibold mb-4">Contact</h4><ul class="space-y-2 text-white/70"><li>Kasteelseplaats 4, Ravenstein</li><li><a href="tel:0412-631010" class="hover:text-white transition-colors duration-200 cursor-pointer">0412-631010</a></li><li><a href="tel:0649652945" class="hover:text-white transition-colors duration-200 cursor-pointer">06-49652945</a></li></ul></div>
+            </div>
+            <div class="border-t border-white/10 mt-12 pt-8 text-center text-white/50 text-sm"><p>&copy; 2024 Yoga Ravenstein · Gebouwd door <a href="https://www.code-lieshout.nl" class="hover:text-white transition-colors duration-200 cursor-pointer">Code Lieshout</a></p></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => { document.getElementById('mobile-menu').classList.toggle('hidden'); });
+        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
