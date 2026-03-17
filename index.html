@@ -100,7 +100,11 @@
     <!-- Hero -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="images/achtergrond.jpg" alt="Yoga in Ravenstein" class="w-full h-full object-cover" loading="eager">
+            <video autoplay muted loop playsinline class="w-full h-full object-cover" poster="images/achtergrond.jpg">
+                <source src="images/hero-video.mp4" type="video/mp4">
+                <!-- Fallback -->
+                <img src="images/achtergrond.jpg" alt="Yoga in Ravenstein" class="w-full h-full object-cover">
+            </video>
             <div class="hero-overlay absolute inset-0"></div>
         </div>
         <!-- Breathing organic shape -->
